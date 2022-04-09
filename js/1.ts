@@ -29,17 +29,17 @@ const visitorName = "James";
 //   console.log(item);
 // });
 
-const userAnswer = prompt("What is the 'official' name of JS?");
-if (userAnswer.toLowerCase() == "Ecmascript".toLowerCase()) {
-  alert("Correct");
-} else {
-  alert("incorrect");
-}
+// const userAnswer = prompt("What is the 'official' name of JS?");
+// if (userAnswer.toLowerCase() == "Ecmascript".toLowerCase()) {
+//   alert("Correct");
+// } else {
+//   alert("incorrect");
+// }
 
 // the bad way would be
 
 // this is clever, but not useful. Do not do this.
-prompt("What is... ?") == "Ecmascript" ? alert("correct") : alert("incorrect");
+// prompt("What is... ?") == "Ecmascript" ? alert("correct") : alert("incorrect");
 
 // another example of the above
 // let result (a + b < 4) ? 'Below' : 'Over';
@@ -53,3 +53,12 @@ prompt("What is... ?") == "Ecmascript" ? alert("correct") : alert("incorrect");
 //     : login === ""
 //     ? "No Login"
 //     : "";
+
+let banana = 2;
+
+function edit(banana) {
+  banana = 4;
+}
+
+edit(banana);
+console.log(banana); // prints 2
