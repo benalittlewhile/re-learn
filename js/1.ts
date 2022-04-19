@@ -62,3 +62,13 @@ function edit(banana) {
 
 edit(banana);
 console.log(banana); // prints 2
+const smolEx = {
+  15: "yes",
+  Ben: "yessir",
+  Allonsy: "kinda",
+  0: "0",
+};
+
+for (let key in smolEx) {
+  console.log(`${key}: ${smolEx[key]}`);
+}

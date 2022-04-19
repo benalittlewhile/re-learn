@@ -49,3 +49,12 @@ function edit(banana) {
 }
 edit(banana);
 console.log(banana); // prints 2
+var smolEx = {
+    15: "yes",
+    Ben: "yessir",
+    Allonsy: "kinda",
+    0: "0"
+};
+for (var key in smolEx) {
+    console.log("".concat(key, ": ").concat(smolEx[key]));
+}
