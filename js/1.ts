@@ -72,3 +72,22 @@ const smolEx = {
 for (let key in smolEx) {
   console.log(`${key}: ${smolEx[key]}`);
 }
+
+const Ben = {
+  name: "bwah",
+  arrow() {
+    const arrowFunc = () => console.log(this?.name);
+    arrowFunc(); // logs bwah
+  },
+  notArrow() {
+    function not() {
+      console.log(this?.name);
+      console.log(typeof this);
+      console.log(this);
+    }
+    not();
+  },
+};
+
+Ben.arrow();
+Ben.notArrow();

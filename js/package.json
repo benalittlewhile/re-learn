@@ -9,6 +9,7 @@
   },
   "scripts": {
     "haha": "no",
-    "build": "yarn tsc ./*.ts"
+    "build": "yarn tsc ./*.ts",
+    "run": "yarn build && node 1.js"
   }
 }

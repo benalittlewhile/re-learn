@@ -58,3 +58,21 @@ var smolEx = {
 for (var key in smolEx) {
     console.log("".concat(key, ": ").concat(smolEx[key]));
 }
+var Ben = {
+    name: "bwah",
+    arrow: function () {
+        var _this = this;
+        var arrowFunc = function () { return console.log(_this === null || _this === void 0 ? void 0 : _this.name); };
+        arrowFunc(); // logs bwah
+    },
+    notArrow: function () {
+        function not() {
+            console.log(this === null || this === void 0 ? void 0 : this.name);
+            console.log(typeof this);
+            console.log(this);
+        }
+        not();
+    }
+};
+Ben.arrow();
+Ben.notArrow();
